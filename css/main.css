@@ -1,0 +1,332 @@
+/* Seteo */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+li {
+    font-size: 1.03em;
+}
+
+/* Barra de Navegación */
+
+.navbar {
+    background-color: rgb(244, 30, 7);
+}
+
+/* Logotipo de mi página */
+
+.brand-logo:hover {
+    font-weight: 500;
+}
+
+/* Opciones de Navegación */
+
+nav ul a:hover {
+    background-color: rgb(255,255,255);
+    color: rgb(244, 30, 7);
+    font-weight: 600;
+}
+
+/* Opciones de Navegación Actual */
+
+nav ul li.active {
+    background-color: rgb(255,255,255);
+    color: rgb(244, 30, 7);
+    font-weight: 600;   
+}
+
+nav ul .home {
+    color: rgb(244, 30, 7);
+}
+
+
+/* Contenedor de la Imagen Principal */
+
+.hero-container {
+    width: 100%;
+}
+      
+/* Imagen Principal */
+
+.hero {
+    background-image: url('../assets/images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    /* height: 400px; Esto no es para moviles */
+    height: auto;
+}
+
+.row .hero {
+    padding: 0;
+}
+
+/* Contenedor del eslogan publicitario */
+
+.business-tagline {
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: auto;
+    width: 100%;
+    padding: 0.1em 0;;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 80px;
+}
+
+h2 {
+    font-size: 2.8rem;
+    line-height: 50px;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.48rem;
+    font-weight: 700;
+}
+
+
+/* Div con la clase container de la etiqueta main */
+
+.main-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-version {
+    display: flex;
+}
+
+.desktop-version {
+    display: none;
+}
+
+/* Tìtulos de los contenedores que informan sobre la empresa */
+
+.info-title {
+    font-size: 2.72rem;
+}
+
+/* Párrafo sobre lo que hace la empresa */
+
+.purpose {
+    margin-bottom: 3em;
+    margin-top: 2em;
+}
+
+/* Botones naranjas */
+
+.more-info-button {
+    background-color: rgb(244, 30, 7);
+    color: #fff;
+}
+
+/* Contenedor Contáctanos */
+
+.contact-div {
+    margin-top: 2em;
+    margin-bottom: 1.7em;
+}
+
+/* Íconos */
+
+.icons {
+    line-height: 27px;
+    font-size: 1.2em;
+    padding-right: 1rem;
+    padding-bottom: 0.4rem;
+    vertical-align: middle;
+}
+
+.yellow-icon {
+    color: rgb(241, 196, 15);
+}
+
+.orange-icon {
+    color: rgb(229, 108, 7);
+}
+  
+.green-icon {
+    color: rgb(40, 180, 99);
+    padding-bottom: 0.1em;
+}
+
+.social-media-info {
+    padding-bottom: 0.2em;
+}
+  
+.e-mail {
+    color: rgb(52, 152, 255);
+}
+
+/* Segunda lista y sus Íconos */
+
+.second-list {
+    margin-top: 0.8em;
+}
+
+.fa-facebook-official {
+    color: rgb(49, 107, 222);
+    padding-bottom: 0em;
+}
+  
+.fa-twitter {
+    color: rgb(49, 191, 221);
+    padding-bottom: 0em;
+}
+
+/* Tarjetas */
+
+.advertisement {
+    width: 300px;
+    max-width: 100%;
+}
+
+.image {
+    height: 200px;
+}
+
+.advertisement .card-content {
+    background-color: rgb(245, 176, 65);
+}
+
+.advertisement h3 {
+    font-size: 2.3rem;
+    margin: 0rem 0 1.168rem 0;
+}
+
+.advertisement .card-action {
+    background-color: rgb(236, 158, 86);
+}
+
+/* Footer */
+
+.page-footer {
+    padding: 3rem;
+    background-color: rgb(244, 30, 7);
+    font-size: 1.15em;
+}
+
+.page-footer .footer-copyright {
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+}
+
+@media (min-width: 661px) {
+
+    /* Contenedor del eslogan publicitario */
+
+    .business-tagline {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin: 2.7rem 0 1rem 0;
+    }
+
+    h2 {
+        margin: 1rem 0 1.424rem 0;
+    }
+}    
+
+@media (min-width: 993px) {
+
+    /* Div con la clase container de la etiqueta main */
+
+    .mobile-version {
+        display: none;
+    }
+
+    .desktop-version {
+        display: flex;
+    }
+
+    /* Logotipo de mi página*/
+
+    .brand-logo {
+        margin-left: 55px;
+    }
+
+    /* Main */
+
+    .main-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+    /* Primera etiqueta row de main*/
+
+    .first-main-row {
+        margin-bottom: 4em;
+    }
+
+    /* Contenedor Contáctanos */
+
+    .contact-div {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .second-main-row {
+        margin-bottom: 1.8em;
+    }
+
+    img.responsive-img, video.responsive-video {
+        height: 200px;
+    }
+}
+
+@media (min-width: 1027px) {
+    .card .card-content .second-p {
+        margin: 1.25em 0;
+    }
+}
+
+@media (min-width: 1037px) {
+    .card .card-content .first-p {
+        margin: 1.25em 0;
+    }
+}
+
+@media (min-width:1048px) {
+    .card .card-content .third-p {
+        margin: 1.25em 0;
+    }
+}
+
+@media (min-width: 1201px) {
+
+    p {
+        font-size: 1.3em;
+    }
+}
